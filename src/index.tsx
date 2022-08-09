@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter} from "react-router-dom";
+import {BrowserRouter, HashRouter} from "react-router-dom";
 import {Provider} from "react-redux";
 import {store} from "./redux/Store";
 import App from './App';
@@ -27,12 +27,12 @@ const Global = createGlobalStyle`
 
 
 ReactDOM.render(
-	<BrowserRouter>
+	<HashRouter>
 		<Provider store={store}>
 			<App/>
 			<Global/>
 		</Provider>
-	</BrowserRouter>,
+	</HashRouter>,
 	document.getElementById('root')
 );
 

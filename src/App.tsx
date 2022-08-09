@@ -16,7 +16,7 @@ const Content = styled.div`
 `;
 
 function App() {
-	console.log('app')
+
 
 	const isAuth = useSelector<AppRootStateType, boolean>(state => state.authReducer.isAuth)
 	const navigate = useNavigate()
